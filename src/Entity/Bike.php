@@ -20,12 +20,33 @@ class Bike
     /**
      * @ORM\Column(type="string", length=255)
      */
+    private $serialNumber;
+
+    /**
+     * @return mixed
+     */
+    public function getSerialNumber()
+    {
+        return $this->serialNumber;
+    }
+
+    /**
+     * @param mixed $serialNumber
+     */
+    public function setSerialNumber($serialNumber): void
+    {
+        $this->serialNumber = $serialNumber;
+    }
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
     private $type;
 
     /**
      * @ORM\Column(type="boolean")
      */
-    private $available;
+    private $available = true;
 
     public function getId(): ?int
     {

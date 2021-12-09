@@ -1,7 +1,7 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use App\Services\UtilRegExp;
+use App\Services\Util\UtilRegExp;
 
 class UtilRegExpTest extends TestCase
 {

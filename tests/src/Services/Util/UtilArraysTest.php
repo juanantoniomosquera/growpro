@@ -1,7 +1,7 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use App\Services\UtilArrays;
+use App\Services\Util\UtilArrays;
 
 class UtilArraysTestTest extends TestCase
 {
